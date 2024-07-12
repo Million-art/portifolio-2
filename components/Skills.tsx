@@ -1,4 +1,9 @@
+'use client'
+
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 
 // Import all the necessary image assets
@@ -16,32 +21,66 @@ import githubImage from '../assets/git.png';
 import dockerImage from '../assets/docker.png';
 
 const Skills = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
+
   return (
-    <div className="mt-5 flex h-fit flex-col justify-center items-center py-12">
+    <div  className="mt-5 flex flex-col px-5 items-center py-12">
       <h1 className="text-3xl md:text-5xl font-bold mb-12">My Skills</h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 justify-center gap-12 max-w-4xl">
-        {/* Skill items */}
-        {[
-          { image: htmlImage, title: 'HTML' },
-          { image: cssImage, title: 'CSS' },
-          { image: jsImage, title: 'JavaScript' },
-          { image: reactImage, title: 'React' },
-          { image: nextjsImage, title: 'Next.js' },
-          { image: nodejsImage, title: 'Node.js' },
-          { image: wordpressImage, title: 'WordPress' },
-          { image: mongodb, title: 'MongoDB' },
-          { image: mysql, title: 'MySql' },
-          { image: api, title: 'Api Integration' },
-          { image: githubImage, title: 'GitHub' },
-          { image: dockerImage, title: 'Docker' },
-        ].map((skill, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="relative w-24 sm:w-32 h-24 sm:h-32 rounded-full overflow-hidden">
-              <Image src={skill.image} layout="fill" objectFit="cover" className="animate-pulse" alt={skill.title} />
+      <div className="max-w-4xl w-full">
+        <Slider {...settings}>
+          {/* Skill items */}
+          {[
+
+            { image: jsImage, title: 'JavaScript' },
+            { image: reactImage, title: 'React' },
+            { image: nextjsImage, title: 'Next.js' },
+            { image: nodejsImage, title: 'Node.js' },
+            { image: wordpressImage, title: 'WordPress' },
+            { image: mongodb, title: 'MongoDB' },
+            { image: mysql, title: 'MySQL' },
+            { image: api, title: 'API Integration' },
+            { image: githubImage, title: 'GitHub' },
+            { image: dockerImage, title: 'Docker' },
+            { image: htmlImage, title: 'HTML' },
+            { image: cssImage, title: 'CSS' },
+          ].map((skill, index) => (
+            <div key={index} className="flex justify-center  flex-col items-center px-4">
+              <div className="w-[170px] h-32 sm:w-40 sm:h-[130px] flex justify-center items-center  overflow-hidden relative">
+                <Image src={skill.image} layout="fill" objectFit="contain" alt={skill.title} className='ml-2' />
+              </div>
+              <p className="mt-4 font-medium text-base sm:text-xl text-center">{skill.title}</p>
             </div>
-            <p className="mt-4 font-medium text-base sm:text-xl">{skill.title}</p>
-          </div>
-        ))}
+          ))}
+        </Slider>
       </div>
     </div>
   );
