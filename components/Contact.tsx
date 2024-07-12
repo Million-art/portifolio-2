@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <div id='contact' className="shadow-md rounded-lg p-8 max-w-4xl mx-auto mt-10">
-      <h1 className="text-3xl font-bold mb-6 text-center">Contact Million</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Contact Me</h1>
       <ul className="py-5 flex justify-center items-center gap-10">
         <li className="flex">
           <Link href={contactDetails.telegram} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
