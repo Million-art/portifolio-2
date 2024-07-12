@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -60,10 +61,10 @@ const Hero = () => {
             Hi! I&apos;m Million, a Web and Bot Developer based in Ethiopia.
           </p>
 
-          <a href="#portifolio">
+          <Link href="#portifolio">
             <MagicButton
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ const Header = () => {
     },
     {
       label: 'Portifolio',
-      href: '/portifolio'
+      href: '#portifolio'
     },
     
   ];

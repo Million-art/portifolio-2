@@ -6,12 +6,12 @@ import Web from './portifolio-content/Web';
 const Portfolio = () => {
     const [activeTab, setActiveTab] = useState(1);
 
-    const handleTabChange = (tabIndex:any) => {
+    const handleTabChange = (tabIndex: any) => {
         setActiveTab(tabIndex);
     };
 
     return (
-        <div className="portfolio flex flex-col justify-center items-center">
+        <div id='portifolio' className="portfolio flex mt-auto flex-col justify-center items-center">
             <h1 className='flex text-center text-3xl sm:text-5xl mb-10'>My Previous Projects</h1>
             <div className="tabs tabs-bordered">
                 <div role="tablist" className="tablist flex gap-5">

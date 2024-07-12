@@ -75,7 +75,7 @@ const Skills = () => {
           ].map((skill, index) => (
             <div key={index} className="flex justify-center  flex-col items-center px-4">
               <div className="w-[170px] h-32 sm:w-40 sm:h-[130px] flex justify-center items-center  overflow-hidden relative">
-                <Image src={skill.image} layout="fill" objectFit="contain" alt={skill.title} className='ml-2' />
+                <Image src={skill.image} layout="fill" objectFit="contain" alt={skill.title} className='' />
               </div>
               <p className="mt-4 font-medium text-base sm:text-xl text-center">{skill.title}</p>
             </div>
