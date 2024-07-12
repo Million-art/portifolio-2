@@ -78,7 +78,8 @@ const Header = () => {
           } absolute text-white bg-blue mt-96  left-0 right-0    md:bottom-0 md:static`}
         >
            {navItems.map((item, index) => (
-              <li key={index} className='list-none'>
+              <li key={index} className='list-none' onClick={()=>setIsMenuOpen(!isMenuOpen)}
+>
                 <Link href={item.href} className={`block  lg:inline-block hover:text-golden ${pathname === item.href ? 'font-semibold dark:golden text-golden' : ''}`}>
                   {item.label}
                 </Link>

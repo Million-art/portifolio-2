@@ -26,6 +26,7 @@ const About = () => {
                     <h2 className='text-lg font-semibold mb-2'>Experience</h2>
                     <ul className='text-gray-300 '>
                         <li>📝 1+ Year at Blih Marketing as a Programmer</li>
+                        <li>📝 1+ year as a frelancer</li>
                         <li>📝 3 Months at Fana as an IT Officer</li>
                     </ul>
                 </div>
