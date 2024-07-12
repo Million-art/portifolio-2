@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div id='about' className='container mt-32 sm:mx-auto  px-4'>
+        <div id='about' className='container mt-48 sm:mx-auto  px-4'>
             <h1 className='text-3xl font-bold mt-8 mb-4 text-center'>About Me</h1>
             <p className='text-lg text-center mb-8'>
                 I am a passionate and ethical developer with strong problem-solving skills and a solid foundation in data structures and algorithms. These skills empower me to effectively tackle challenges and deliver robust solutions.
