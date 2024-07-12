@@ -27,12 +27,12 @@ const portfolioItems = [
 const Web = () => {
   return (
     <div className="w-full h-fit bg-black rounded-2xl shadow-xl border border-blue-500 p-6 md:p-8 lg:p-10">
-      <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:text-4xl">Web Development 🌐 </h2>
-      <p className="text-base md:text-lg lg:text-xl mb-6">
-        I have extensive experience in building responsive and user-friendly websites for both individuals
-         and businesses. My expertise extends from creating simple static pages to complex dynamic web applications 
-         using the latest and most trending tech stacks.
-      </p>
+      <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:text-4xl">Fullstack Web Development 🌐 </h2>
+      <li className='text-lg font-thin text-gray-300'>Frontend Development: using React and Next js, I can develop web that are optimised and efficient </li>
+      <li className='text-lg font-thin text-gray-300'>Backend Development: using Node js, Express js and Next.js 13, I can develop backend services that are powerfull and secure  </li>
+      <li className='text-lg font-thin text-gray-300'>Api integration: Rust Api integration</li>
+      <li className='text-lg font-thin text-gray-300'>Wordpress: I excele developing fast and efficient wordpress site using elementor and gutenberg</li>
+       
       
     </div>
   );
