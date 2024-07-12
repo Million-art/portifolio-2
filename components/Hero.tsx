@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Ethical Web and Bot developer 
+            Ethical Web and Bot developer
           </p>
 
           {/**
@@ -57,12 +57,12 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Million, a Next.js Developer based in Ethiopia.
+            Hi! I&apos;m Million, a Web and Bot Developer based in Ethiopia.
           </p>
 
-          <a href="#about">
+          <a href="#portifolio">
             <MagicButton
-             />
+            />
           </a>
         </div>
       </div>
