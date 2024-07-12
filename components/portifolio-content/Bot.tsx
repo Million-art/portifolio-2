@@ -1,17 +1,70 @@
-import React from 'react';
-import Image from 'next/image';
+import dir from '@/assets/dir.jpg';
+import global from '@/assets/global.jpg';
+import blih from '@/assets/blih.jpg';
+import oromia from '@/assets/oromia.png';
+import Image, { StaticImageData } from 'next/image';
+
+// Interface definition for card data
+interface Card {
+    image: StaticImageData;
+    name: string;
+    git:string;
+    web: string;
+}
+
+// Array of card data
+const cards: Card[] = [
+    {
+        image: oromia,
+        name: 'Oromia Bank',
+        git:'https://github.com/Million-art/oromiya_bank_referral_bot_v2',
+        web: 'https://t.me/official_oromia_bank_bot'
+    },
+    {
+        image: global,
+        name: 'Global Bank Ethiopia',
+        git:'https://github.com/Million-art/oromiya_bank_referral_bot_v2',
+        web: 'https://lewis-retails-supermarket.vercel.app/'
+    },
+    {
+        image: blih,
+        name: ' ብልህ የ ቢዝነስ ሰው',
+        git:' ',
+        web: 'https://t.me/blihmarkting_bot'
+    },
+    // Add more cards as needed
+];
 
 const Bot = () => {
-  return (
-    <div className="w-full h-fit border rounded-2xl shadow-xl bg-black border-blue-500 p-6 md:p-8 lg:p-10">
-      <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:text-4xl">Telegram Bot and Web App Development</h2>
-      <p className="text-base md:text-lg lg:text-xl mb-6">
-      I specialize in developing powerful and engaging Telegram bots that can automate various tasks, 
-      provide personalized assistance, and enhance your users' messaging experience. With my expertise in Telegram Bot API and 
-       Web App Development, I can create bots that are highly responsive, feature-rich, and tailored to your specific requirements.      </p>
-       
+    return (
+        <div className='mt-6 w-full'>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {cards.map((card, index) => (
+                <div key={index} className="bg-black w-full rounded-lg overflow-hidden shadow-md">
+                    <figure className="flex justify-center">
+                        <Image src={card.image} alt={card.name} className="w-full h-48 object-cover" />
+                    </figure>
+                    <div className="p-4">
+                        <h2 className="text-xl font-semibold mb-2">{card.name}</h2>
+                        <div className="flex justify-between items-center">
+                            {card.git && (
+                                <a href={card.git} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                    GitHub
+                                </a>
+                            )}
+                            {card.web && (
+                                <a href={card.web} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                    Bot
+                                </a>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+
     </div>
-  );
+    );
 };
 
 export default Bot;

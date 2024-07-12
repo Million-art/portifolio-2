@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { Tabs } from "./ui/tabs";
-import Web from "./portifolio-content/Web";
-import Bot from "./portifolio-content/Bot";
+import Web from "./services-content/Web";
+import Bot from "./services-content/Bot";
 
 export function Services() {
   const tabs = [

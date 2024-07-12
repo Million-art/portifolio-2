@@ -93,3 +93,22 @@
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* portifolio tab */
+ .tab {
+  /* Base styles for tabs */
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-weight: normal;
+  text-decoration: none;
+  color: #8b8b8b; /* Example text color */
+}
+
+.tab.active {
+  /* Styles for active tab */
+  font-weight: bold;
+  color: #ffffff; /* Example text color for active tab */
+  border-bottom: 2px solid #4a90e2; /* Example underline color and thickness */
+}

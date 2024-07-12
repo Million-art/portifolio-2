@@ -1,41 +1,86 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
-const portfolioItems = [
-  {
-    img: '/project1.jpg',
-    name: 'Project 1',
-    gitHubUrl: 'https://github.com/username/project1',
-    websiteUrl: 'https://www.example.com/project1',
-  },
-  {
-    img: '/project2.jpg',
-    name: 'Project 2',
-    gitHubUrl: 'https://github.com/username/project2',
-    websiteUrl: 'https://www.example.com/project2',
-  },
-  {
-    img: '/project3.jpg',
-    name: 'Project 3',
-    gitHubUrl: 'https://github.com/username/project3',
-    websiteUrl: 'https://www.example.com/project3',
-  },
-  // Add more portfolio items as needed
+// Importing images (assuming these are the correct paths)
+import ecommerce from '@/assets/ecommerce.png';
+import dir from '@/assets/dir.png';
+import blih from '@/assets/blihweb.png';
+import lewis from '@/assets/lewis.png';
+import ehpsa from '@/assets/ehpsa.png';
+import Image, { StaticImageData } from 'next/image';
+
+// Interface definition for card data
+interface Card {
+    image: StaticImageData;
+    name: string;
+    git:string;
+    web: string;
+}
+
+// Array of card data
+const cards: Card[] = [
+    {
+        image: ecommerce,
+        name: 'Dir Ecommerce',
+        git:'https://github.com/Million-art/dir_ecommerce',
+        web: 'https://dir-ecommerce.vercel.app/'
+    },
+    {
+        image: blih,
+        name: 'Blih Marketing',
+        git:'',
+        web: 'https://blihmarketing.com'
+    },
+    {
+        image: lewis,
+        name: 'Lewis retails',
+        git:'https://github.com/Million-art/lewis-retails-supermarket',
+        web: 'https://lewis-retails-supermarket.vercel.app/'
+    },
+    {
+        image: dir,
+        name: 'Dir Tech',
+        git:' ',
+        web: 'https://dirtechsolution.com/'
+    },
+    {
+        image: ehpsa,
+        name: 'Ethiopian Health profession',
+        git:'https://github.com/Million-art/EHPSA',
+        web: 'https://ehpsa.vercel.app/'
+    },
+    // Add more cards as needed
 ];
 
 const Web = () => {
-  return (
-    <div className="w-full h-fit bg-black rounded-2xl shadow-xl border border-blue-500 p-6 md:p-8 lg:p-10">
-      <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:text-4xl">Web Development</h2>
-      <p className="text-base md:text-lg lg:text-xl mb-6">
-        I have extensive experience in building responsive and user-friendly websites for both individuals
-         and businesses. My expertise extends from creating simple static pages to complex dynamic web applications 
-         using the latest and most trending tech stacks.
-      </p>
-      
+    return (
+        <div className='mt-6'>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {cards.map((card, index) => (
+                <div key={index} className="bg-black rounded-lg overflow-hidden shadow-md">
+                    <figure className="flex justify-center">
+                        <Image src={card.image} alt={card.name} className="w-full h-48 object-cover" />
+                    </figure>
+                    <div className="p-4">
+                        <h2 className="text-xl font-semibold mb-2">{card.name}</h2>
+                        <div className="flex justify-between items-center">
+                            {card.git && (
+                                <a href={card.git} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                    GitHub
+                                </a>
+                            )}
+                            {card.web && (
+                                <a href={card.web} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                    Web Link
+                                </a>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+
     </div>
-  );
+    );
 };
 
 export default Web;
