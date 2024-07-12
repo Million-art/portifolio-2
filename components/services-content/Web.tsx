@@ -27,7 +27,7 @@ const portfolioItems = [
 const Web = () => {
   return (
     <div className="w-full h-fit bg-black rounded-2xl shadow-xl border border-blue-500 p-6 md:p-8 lg:p-10">
-      <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:text-4xl">Web Development </h2>
+      <h2 className="text-2xl font-bold mb-4 md:text-3xl lg:text-4xl">Web Development 🌐 </h2>
       <p className="text-base md:text-lg lg:text-xl mb-6">
         I have extensive experience in building responsive and user-friendly websites for both individuals
          and businesses. My expertise extends from creating simple static pages to complex dynamic web applications 

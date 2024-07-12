@@ -53,7 +53,7 @@ const Skills = () => {
   };
 
   return (
-    <div  className="mt-5 flex flex-col px-5 items-center py-12">
+    <div className="mt-5 flex flex-col px-5 items-center py-12">
       <h1 className="text-3xl md:text-5xl font-bold mb-12">My Skills</h1>
       <div className="max-w-4xl w-full">
         <Slider {...settings}>
@@ -73,12 +73,15 @@ const Skills = () => {
             { image: htmlImage, title: 'HTML' },
             { image: cssImage, title: 'CSS' },
           ].map((skill, index) => (
-            <div key={index} className="flex justify-center  flex-col items-center px-4">
-              <div className="w-[170px] h-32 sm:w-40 sm:h-[130px] flex justify-center items-center  overflow-hidden relative">
-                <Image src={skill.image} layout="fill" objectFit="contain" alt={skill.title} className='ml-10 sm:ml-0' />
+            <div>
+              <div key={index} className="flex justify-center  flex-col items-center px-4">
+                <div className="w-[170px] h-32 sm:w-full  sm:h-[130px] flex  relative">
+                  <Image src={skill.image} objectFit="contain" alt={skill.title} className=' sm:ml-0' />
+                </div>
               </div>
-              <p className="mt-4 font-medium text-base sm:text-xl text-center">{skill.title}</p>
+                <p className="mt-4 font-medium text-base sm:text-xl text-center">{skill.title}</p>
             </div>
+
           ))}
         </Slider>
       </div>
