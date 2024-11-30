@@ -7,18 +7,21 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 
 // Import all the necessary image assets
-import htmlImage from '../assets/html.png';
-import cssImage from '../assets/css.png';
-import jsImage from '../assets/js.png';
+import postgres from '../assets/postgress.png';
+import kubernet from '../assets/kubernet.png';
+import nestjs from '../assets/nest.png';
 import reactImage from '../assets/react.png';
 import nextjsImage from '../assets/nextjs.png';
 import nodejsImage from '../assets/node.png';
 import mongodb from '../assets/mongodb.png';
 import mysql from '../assets/mysql.png';
-import api from '../assets/api.png';
-import wordpressImage from '../assets/wordpress.png';
+import graphql from '../assets/graphql.png';
+import rustapi from '../assets/rustapi.png';
+import golang from '../assets/golang.png';
 import githubImage from '../assets/git.png';
 import dockerImage from '../assets/docker.png';
+import kafka from '../assets/kafka.png';
+import rabitmq from '../assets/rabit.png';
 
 const Skills = () => {
   const settings = {
@@ -60,18 +63,21 @@ const Skills = () => {
           {/* Skill items */}
           {[
 
-            { image: jsImage, title: 'JavaScript' },
             { image: reactImage, title: 'React' },
             { image: nextjsImage, title: 'Next.js' },
+            { image: nestjs, title: 'Nest Js' },
             { image: nodejsImage, title: 'Node.js' },
-            { image: wordpressImage, title: 'WordPress' },
+            { image: golang, title: 'Golang' },
             { image: mongodb, title: 'MongoDB' },
             { image: mysql, title: 'MySQL' },
-            { image: api, title: 'API Integration' },
+            { image: postgres, title: 'PostgreSQL' },
             { image: githubImage, title: 'GitHub' },
+            { image: graphql, title: 'graphql' },
+            { image: rustapi, title: 'rust Api' },
+            { image: kafka, title: 'Apache Kafka' },
+            { image: rabitmq, title: 'RabitMQ' },
             { image: dockerImage, title: 'Docker' },
-            { image: htmlImage, title: 'HTML' },
-            { image: cssImage, title: 'CSS' },
+            { image: kubernet, title: 'Kubernetes' },
           ].map((skill, index) => (
             <div>
               <div key={index} className="flex justify-center  flex-col items-center px-4">

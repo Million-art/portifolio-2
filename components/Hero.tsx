@@ -58,7 +58,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Million, a Web and Bot Developer based in Ethiopia.
+            Hi! I&apos;m Million, a Web and Bot Developer.
           </p>
 
           <Link href="#portifolio">

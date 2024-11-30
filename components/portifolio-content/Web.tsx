@@ -1,6 +1,8 @@
 import React from 'react';
 
 // Importing images (assuming these are the correct paths)
+import adpictures from '@/assets/adpictures.png';
+import thejuice from '@/assets/thejuiceplus.png';
 import ecommerce from '@/assets/ecommerce.png';
 import dir from '@/assets/dir.png';
 import blih from '@/assets/blihweb.png';
@@ -18,6 +20,18 @@ interface Card {
 
 // Array of card data
 const cards: Card[] = [
+    {
+        image: adpictures,
+        name: 'AD Pictures',
+        git:'',
+        web: 'https://adpicturesethio.com/en'
+    },
+    {
+        image: thejuice,
+        name: 'The Juice Plus',
+        git:'',
+        web: 'https://thejuicepluss.com/'
+    },
     {
         image: ecommerce,
         name: 'Dir Ecommerce',
