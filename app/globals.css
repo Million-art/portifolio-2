@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  font-family: 'Ubuntu', sans-serif; /* Replace with your desired font */
+  font-family:'Times New Roman', Times, serif sans-serif;  
 }
 @layer base {
   :root {

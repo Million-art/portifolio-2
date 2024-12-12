@@ -4,11 +4,13 @@ import React from 'react';
 import adpictures from '@/assets/adpictures.png';
 import thejuice from '@/assets/thejuiceplus.png';
 import ecommerce from '@/assets/ecommerce.png';
-import dir from '@/assets/dir.png';
+import oromia from '@/assets/oromia.png';
 import blih from '@/assets/blihweb.png';
 import lewis from '@/assets/lewis.png';
-import ehpsa from '@/assets/ehpsa.png';
+import telegram from '@/assets/telegram.png';
 import Image, { StaticImageData } from 'next/image';
+import global from '@/assets/global.jpg';
+import Link from 'next/link';
 
 // Interface definition for card data
 interface Card {
@@ -27,42 +29,54 @@ const cards: Card[] = [
         web: 'https://adpicturesethio.com/en'
     },
     {
-        image: thejuice,
-        name: 'The Juice Plus',
-        git:'',
-        web: 'https://thejuicepluss.com/'
+        image: telegram,
+        name: ' Crypto Mini App',
+        git:'https://github.com/Million-art/mini_app_backend.git',
+        web: ' https://t.me/john_sart_bot/app/'
     },
+
     {
         image: ecommerce,
         name: 'Dir Ecommerce',
         git:'https://github.com/Million-art/dir_ecommerce',
         web: 'https://dir-ecommerce.vercel.app/'
     },
+
     {
-        image: blih,
-        name: 'Blih Marketing',
-        git:'',
-        web: 'https://blihmarketing.com'
+        image: oromia,
+        name: 'Oromia Bank Referral BOT',
+        git:'https://github.com/Million-art/oromiya_bank_referral_bot_v2',
+        web: 'https://t.me/official_oromia_bank_bot'
     },
+
     {
         image: lewis,
         name: 'Lewis retails',
         git:'https://github.com/Million-art/lewis-retails-supermarket',
         web: 'https://lewis-retails-supermarket.vercel.app/'
     },
+
+
     {
-        image: dir,
-        name: 'Dir Tech',
-        git:' ',
-        web: 'https://dirtechsolution.com/'
+        image: global,
+        name: 'Global Bank Ethiopia Referral BOT',
+        git:'https://github.com/Million-art/oromiya_bank_referral_bot_v2',
+        web: 'https://t.me/globalbankethiopia_bot'
     },
     {
-        image: ehpsa,
-        name: 'Ethiopian Health profession',
-        git:'https://github.com/Million-art/EHPSA',
-        web: 'https://ehpsa.vercel.app/'
+        image: thejuice,
+        name: 'The Juice Plus',
+        git:'',
+        web: 'https://thejuicepluss.com/'
     },
-    // Add more cards as needed
+
+    {
+        image: blih,
+        name: 'Blih Marketing',
+        git:'',
+        web: 'https://blihmarketing.com'
+    },
+
 ];
 
 const Web = () => {
@@ -78,14 +92,14 @@ const Web = () => {
                         <h2 className="text-xl font-semibold mb-2">{card.name}</h2>
                         <div className="flex justify-between items-center">
                             {card.git && (
-                                <a href={card.git} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                <Link href={card.git} target='_blank' className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
                                     GitHub
-                                </a>
+                                </Link>
                             )}
                             {card.web && (
-                                <a href={card.web} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                <Link href={card.web} target='_blank' className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
                                     Web Link
-                                </a>
+                                </Link>
                             )}
                         </div>
                     </div>

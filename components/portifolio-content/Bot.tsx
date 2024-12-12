@@ -3,6 +3,7 @@ import global from '@/assets/global.jpg';
 import blih from '@/assets/blih.jpg';
 import oromia from '@/assets/oromia.png';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 // Interface definition for card data
 interface Card {
@@ -48,14 +49,14 @@ const Bot = () => {
                         <h2 className="text-xl font-semibold mb-2">{card.name}</h2>
                         <div className="flex justify-between items-center">
                             {card.git && (
-                                <a href={card.git} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                <Link href={card.git} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
                                     GitHub
-                                </a>
+                                </Link>
                             )}
                             {card.web && (
-                                <a href={card.web} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                <Link href={card.web} className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
                                     Bot
-                                </a>
+                                </Link>
                             )}
                         </div>
                     </div>

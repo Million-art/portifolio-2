@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const About = () => {
@@ -16,19 +17,19 @@ const About = () => {
                 <div className='bg-black px-3 py-5 border rounded-xl text-white'>
                     <h2 className='text-lg font-semibold mb-2'>Certifications</h2>
                     <ul className='text-blue-400'>
-                        <li>👉 <a href="https://www.udemy.com/certificate/UC-372be494-59ec-489a-8cbb-d5f64426cfa4/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email"> Frontend development Zero to Expert </a></li>
-                        <li>👉 <a href="https://verify.mygreatlearning.com/verify/XGZDMZUM"> Project Management </a></li>
-                        <li>👉 <a href="https://verify.mygreatlearning.com/verify/RQDMXFNT"> AWS Fundamentals </a></li>
-                        <li>👉 <a href="https://www.credly.com/badges/d2fadc2d-cb36-4faa-a4b2-c1fe44c9eda5/print"> CISCO Networking </a></li>
+                        <li>👉 <Link href="https://www.udemy.com/certificate/UC-372be494-59ec-489a-8cbb-d5f64426cfa4/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email"> Frontend development Zero to Expert </Link></li>
+                        <li>👉 <Link href="https://verify.mygreatlearning.com/verify/XGZDMZUM"> Project Management </Link></li>
+                        <li>👉 <Link href="https://verify.mygreatlearning.com/verify/RQDMXFNT"> AWS Fundamentals </Link></li>
+                        <li>👉 <Link href="https://www.credly.com/badges/d2fadc2d-cb36-4faa-a4b2-c1fe44c9eda5/print"> CISCO Networking </Link></li>
                     </ul>
                 </div>
                 <div className='bg-black px-3 py-5 border rounded-xl text-white'>
                     <h2 className='text-lg font-semibold mb-2'>Experience</h2>
                     <ul className='text-gray-300'>
-                        <li>📝 1+ year at <a href='https://www.blihmarketing.com' className='text-blue-400'>Blih Marketing</a> as a Programmer</li>
-                        <li>📝 3 months at Go Digital as a Backend Developer</li>
-                        <li>📝 3 months at Bluzon as a Backend Developer</li>
-                        <li>📝 3 months at <a href='https://www.fanabc.com/' className='text-blue-400'>Fana BC</a> as an Intern</li>
+                        <li>📝 1+ year at <Link href='https://www.blihmarketing.com' className='text-blue-400'>Blih Marketing</Link> as a Programmer</li>
+                        <li>📝 6 months at <Link  className='text-blue-400' href='https://www.godigitalethio.com'>Go Digital </Link>  as a Backend Developer</li>
+                        <li>📝 4 months at <Link  className='text-blue-400' href="https://bluzonsolutions.com/">Bluzon</Link> as a Backend Developer</li>
+                        <li>📝 3 months at <Link  className='text-blue-400' href='https://www.fanabc.com/' >Fana BC</Link> as an Intern</li>
                     </ul>
 
                 </div>
