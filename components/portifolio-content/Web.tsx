@@ -12,7 +12,7 @@ import mrb from '@/assets/mrb.jpg';
 import Image, { StaticImageData } from 'next/image';
 import global from '@/assets/global.jpg';
 import Link from 'next/link';
-
+import investpro from '@/assets/investpro.jpg';
 // Interface definition for card data
 interface Card {
     image: StaticImageData;
@@ -23,6 +23,12 @@ interface Card {
 
 // Array of card data
 const cards: Card[] = [
+    {
+        image: investpro,
+        name: 'Invest  Pro',
+        git:'',
+        web: 'https:t.me/@investproo_bot'
+    },
     {
         image: habeshanets,
         name: 'Habesha Nets',

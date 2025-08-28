@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-
+ 
 const Bot = () => {
   return (
     <div className="w-full h-fit border rounded-2xl shadow-xl bg-black border-blue-500 p-6 md:p-8 lg:p-10">

@@ -12,8 +12,7 @@ const About = () => {
                 <div className='bg-black px-3 py-5 border rounded-xl text-white'>
                     <h2 className='text-lg font-semibold mb-2'>Education</h2>
                          <li>Bachelor's in Computer Science</li>
-                          <li>Level2 in Graphics Design </li>
-                 </div>
+                  </div>
                 <div className='bg-black px-3 py-5 border rounded-xl text-white'>
                     <h2 className='text-lg font-semibold mb-2'>Certifications</h2>
                     <ul className='text-blue-400'>
@@ -26,9 +25,11 @@ const About = () => {
                 <div className='bg-black px-3 py-5 border rounded-xl text-white'>
                     <h2 className='text-lg font-semibold mb-2'>Experience</h2>
                     <ul className='text-gray-300'>
+
                         <li>📝 1+ year at <Link href='https://www.blihmarketing.com' className='text-blue-400'>Blih Marketing</Link> as a Programmer</li>
+                        <li>📝 1 year at <Link href='https://www.blihmarketing.com' className='text-blue-400'>30x LLC(Remote)</Link> as a Web Developer</li>
                         <li>📝 6 months at <Link  className='text-blue-400' href='https://www.godigitalethio.com'>Go Digital </Link>  as a Backend Developer</li>
-                        <li>📝 4 months at <Link  className='text-blue-400' href="https://bluzonsolutions.com/">Bluzon</Link> as a Backend Developer</li>
+                        <li>📝 4 months at <Link  className='text-blue-400' href="https://techsphareet.com/">Techsphere</Link> as a Web Developer</li>
                         <li>📝 3 months at <Link  className='text-blue-400' href='https://www.fanabc.com/' >Fana BC</Link> as an Intern</li>
                     </ul>
 

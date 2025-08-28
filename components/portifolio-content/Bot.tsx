@@ -1,7 +1,7 @@
-import dir from '@/assets/dir.jpg';
 import global from '@/assets/global.jpg';
 import blih from '@/assets/blih.jpg';
 import oromia from '@/assets/oromia.png';
+import maraki from '@/assets/maraki.jpg';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
@@ -15,6 +15,12 @@ interface Card {
 
 // Array of card data
 const cards: Card[] = [
+    {
+        image: maraki,
+        name: 'Maraki Ai',
+        git:'',
+        web: 'https://t.me/marakiai_bot'
+    },
     {
         image: oromia,
         name: 'Oromia Bank',
