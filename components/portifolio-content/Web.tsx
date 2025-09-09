@@ -3,10 +3,9 @@ import React from 'react';
 // Importing images (assuming these are the correct paths)
 import habeshanets from '@/assets/habeshanets.png';
 import adpictures from '@/assets/adpictures.png';
-import thejuice from '@/assets/thejuiceplus.png';
 import ecommerce from '@/assets/ecommerce.png';
 import oromia from '@/assets/oromia.png';
-import blih from '@/assets/blihweb.png';
+import marakiai from '@/assets/marakiai.jpg';
 import lewis from '@/assets/lewis.png';
 import mrb from '@/assets/mrb.jpg';
 import Image, { StaticImageData } from 'next/image';
@@ -23,6 +22,12 @@ interface Card {
 
 // Array of card data
 const cards: Card[] = [
+        {
+        image: marakiai,
+        name: 'Maraki Ai',
+        git:'',
+        web: 'https://t.me/marakiai_bot'
+    },
     {
         image: investpro,
         name: 'Invest  Pro',
@@ -76,19 +81,7 @@ const cards: Card[] = [
         git:'https://github.com/Million-art/oromiya_bank_referral_bot_v2',
         web: 'https://t.me/globalbankethiopia_bot'
     },
-    {
-        image: thejuice,
-        name: 'The Juice Plus',
-        git:'',
-        web: 'https://thejuicepluss.com/'
-    },
 
-    {
-        image: blih,
-        name: 'Blih Marketing',
-        git:'',
-        web: 'https://blihmarketing.com'
-    },
 
 ];
 

@@ -29,7 +29,7 @@ const About = () => {
                         <li>📝 1+ year at <Link href='https://www.blihmarketing.com' className='text-blue-400'>Blih Marketing</Link> as a Programmer</li>
                         <li>📝 1 year at <Link href='https://www.blihmarketing.com' className='text-blue-400'>30x LLC(Remote)</Link> as a Web Developer</li>
                         <li>📝 6 months at <Link  className='text-blue-400' href='https://www.godigitalethio.com'>Go Digital </Link>  as a Backend Developer</li>
-                        <li>📝 4 months at <Link  className='text-blue-400' href="https://techsphareet.com/">Techsphere</Link> as a Web Developer</li>
+                        <li>📝 8 months at <Link  className='text-blue-400' href="https://techsphareet.com/">Techsphere</Link> as a Web Developer</li>
                         <li>📝 3 months at <Link  className='text-blue-400' href='https://www.fanabc.com/' >Fana BC</Link> as an Intern</li>
                     </ul>
 
