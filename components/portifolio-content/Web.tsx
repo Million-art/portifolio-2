@@ -2,7 +2,6 @@ import React from 'react';
 
 // Importing images (assuming these are the correct paths)
 import habeshanets from '@/assets/habeshanets.png';
-import adpictures from '@/assets/adpictures.png';
 import ecommerce from '@/assets/ecommerce.png';
 import oromia from '@/assets/oromia.png';
 import marakiai from '@/assets/marakiai.jpg';
@@ -12,6 +11,7 @@ import Image, { StaticImageData } from 'next/image';
 import global from '@/assets/global.jpg';
 import Link from 'next/link';
 import investpro from '@/assets/investpro.jpg';
+import blockbar from '@/assets/BlockBar.png'
 // Interface definition for card data
 interface Card {
     image: StaticImageData;
@@ -32,7 +32,7 @@ const cards: Card[] = [
         image: investpro,
         name: 'Invest  Pro',
         git:'',
-        web: 'https:t.me/@investproo_bot'
+        web: 'https:t.me/investproo_bot'
     },
     {
         image: habeshanets,
@@ -41,14 +41,14 @@ const cards: Card[] = [
         web: 'https://www.habeshanets.com/en'
     },
     {
-        image: adpictures,
-        name: 'AD Pictures',
+        image: blockbar,
+        name: 'BlockBar',
         git:'',
-        web: 'https://adpicturesethio.com/en'
+        web: 'https://blockbar.com'
     },
     {
         image: mrb,
-        name: ' Mr Beast Crypto BOT',
+        name: ' Mr Beast Crypto Remittance',
         git:'https://github.com/Million-art/mini_app_backend.git',
         web: ' https://t.me/john_sart_bot/app/'
     },
