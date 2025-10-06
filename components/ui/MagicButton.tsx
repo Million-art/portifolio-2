@@ -4,8 +4,8 @@ import { saveAs } from 'file-saver'; // Import the file-saver library
 
 const MagicButton = () => {
   const handleDownload = () => {
-    const fileUrl = '/resume/Million-fullstack.pdf'; // Path to the file in the public folder
-    const fileName = 'Million-Fullstack-Resume.pdf'; // Name for the downloaded file
+    const fileUrl = '/resume/million_resume.pdf'; // Path to the file in the public folder
+    const fileName = 'million_resume.pdf'; // Name for the downloaded file
 
     // Use file-saver to trigger the download
     saveAs(fileUrl, fileName);
