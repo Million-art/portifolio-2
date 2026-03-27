@@ -32,14 +32,7 @@ const cards: Card[] = [
         name: 'Global Bank Ethiopia',
         git:'https://github.com/Million-art/oromiya_bank_referral_bot_v2',
         web: 'https://lewis-retails-supermarket.vercel.app/'
-    },
-    {
-        image: blih,
-        name: ' ብልህ የ ቢዝነስ ሰው',
-        git:' ',
-        web: 'https://t.me/blihmarkting_bot'
-    },
-    // Add more cards as needed
+    }
 ];
 
 const Bot = () => {

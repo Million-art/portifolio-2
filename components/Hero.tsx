@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="max-w-[92vw] md:max-w-3xl lg:max-w-4xl flex flex-col items-center justify-center text-center">
           <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
             <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-cyan-300/90">
-              AI · Backend · Bots
+              Performance · Scale · Reliability
             </span>
             <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium text-zinc-400">
               Senior Backend Engineer @ PTGR AG
@@ -40,15 +40,18 @@ const Hero = () => {
           </div>
 
           <TextGenerateEffect
-            words="Shipping intelligent products from APIs to AI-powered experiences"
+            words="Shipping real performant systems with backends built to handle a million requests the right way"
             className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-semibold leading-[1.15] tracking-tight"
           />
 
           <p className="mt-6 max-w-2xl text-pretty text-base md:text-lg text-zinc-400 leading-relaxed">
-            I&apos;m <span className="text-zinc-200 font-medium">Million</span> — I design and build{" "}
-            <span className="text-gradient font-medium">LLM-backed workflows</span>, conversational bots,
-            and production backends. I care about clear architecture, observability, and ethical use of AI
-            in real user-facing products.
+            I&apos;m <span className="text-zinc-200 font-medium">Million</span> — I focus on{" "}
+            <span className="text-gradient font-medium">production backends</span> that stay fast under
+            load: lean APIs, smart caching, queues and workers, connection pooling, database tuning, and
+            horizontal scaling so spikes and sustained traffic—on the order of{" "}
+            <span className="text-zinc-300">1M+ requests</span>—stay predictable, observable, and
+            cost-aware. Still shipping bots and AI features where they belong: on top of solid
+            infrastructure.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
