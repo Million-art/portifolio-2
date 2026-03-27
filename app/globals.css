@@ -1,9 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  font-family:'Times New Roman', Times, serif sans-serif;  
-}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -76,6 +73,9 @@ body {
     @apply bg-background text-foreground;
     scroll-behavior: smooth;
   }
+  ::selection {
+    @apply bg-cyan-500/30 text-white;
+  }
   button {
     @apply active:outline-none;
   }
@@ -83,7 +83,13 @@ body {
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-4xl md:text-5xl text-center tracking-tight;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-violet-300 to-fuchsia-300;
+  }
+  .surface-card {
+    @apply rounded-2xl border border-white/[0.08] bg-gradient-to-br from-white/[0.06] to-transparent backdrop-blur-sm shadow-[0_0_0_1px_rgba(255,255,255,0.04)_inset];
   }
 }
 
@@ -97,21 +103,22 @@ body {
   display: none;
 }
 
-/* portifolio tab */
- .tab {
-  /* Base styles for tabs */
-  padding: 10px 20px;
+/* portfolio tab */
+.tab {
+  padding: 0.625rem 1.25rem;
   cursor: pointer;
   border: none;
-  background: none;
-  font-weight: normal;
-  text-decoration: none;
-  color: #8b8b8b; /* Example text color */
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: rgb(161 161 170);
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
 }
 
 .tab.active {
-  /* Styles for active tab */
-  font-weight: bold;
-  color: #ffffff; /* Example text color for active tab */
-  border-bottom: 2px solid #4a90e2; /* Example underline color and thickness */
+  font-weight: 600;
+  color: rgb(244 244 245);
+  background: rgba(34, 211, 238, 0.12);
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25);
 }

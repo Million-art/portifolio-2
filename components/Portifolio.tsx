@@ -11,12 +11,16 @@ const Portfolio = () => {
     };
 
     return (
-        <div id='portifolio' className="portfolio flex mt-48 sm:mt-auto flex-col justify-center items-center">
-            <h1 className='flex text-center text-3xl sm:text-5xl mb-10'>My Previous Projects</h1>
-            <div className="tabs tabs-bordered">
-                <div role="tablist" className="tablist flex gap-5">
+        <div id='portifolio' className="portfolio mt-32 flex flex-col items-center justify-center md:mt-40">
+            <h2 className="heading mb-3 text-zinc-100">Selected work</h2>
+            <p className="mb-10 max-w-lg text-center text-sm text-zinc-400 md:text-base">
+                Product engineering across web platforms, fintech-adjacent flows, and intelligent bots.
+            </p>
+            <div className="tabs tabs-bordered w-full max-w-6xl">
+                <div role="tablist" className="tablist mb-8 flex flex-wrap justify-center gap-3">
                     <button
-                        className={`tab ${activeTab === 1 ? 'active' : '!bg-blue-400 !text-white'}   text-xl sm:text-2xl`}
+                        type="button"
+                        className={`tab text-base sm:text-lg ${activeTab === 1 ? 'active' : ''}`}
                         onClick={() => handleTabChange(1)}
                         aria-selected={activeTab === 1}
                         aria-controls="tab-content-1"

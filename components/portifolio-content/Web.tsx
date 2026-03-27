@@ -2,16 +2,15 @@ import React from 'react';
 
 // Importing images (assuming these are the correct paths)
 import habeshanets from '@/assets/habeshanets.png';
-import ecommerce from '@/assets/ecommerce.png';
 import oromia from '@/assets/oromia.png';
-import marakiai from '@/assets/marakiai.jpg';
-import lewis from '@/assets/lewis.png';
 import mrb from '@/assets/mrb.jpg';
 import Image, { StaticImageData } from 'next/image';
-import global from '@/assets/global.jpg';
 import Link from 'next/link';
 import investpro from '@/assets/investpro.jpg';
-import blockbar from '@/assets/BlockBar.png'
+import blockbar from '@/assets/BlockBar.png';
+import carramarket from '@/assets/carramarket.png';
+import sewafri from '@/assets/sewafri.png';
+import hive888 from '@/assets/hive888.png';
 // Interface definition for card data
 interface Card {
     image: StaticImageData;
@@ -22,17 +21,12 @@ interface Card {
 
 // Array of card data
 const cards: Card[] = [
-        {
-        image: marakiai,
-        name: 'Maraki Ai',
-        git:'',
-        web: 'https://t.me/marakiai_bot'
-    },
+
     {
         image: investpro,
         name: 'Invest  Pro',
         git:'',
-        web: 'https:t.me/investproo_bot'
+        web: 'https://investproo_bot/'
     },
     {
         image: habeshanets,
@@ -47,18 +41,30 @@ const cards: Card[] = [
         web: 'https://blockbar.com'
     },
     {
+        image: carramarket,
+        name: 'Carramarket',
+        git: '',
+        web: 'https://carramarket.com/'
+    },
+    {
+        image: sewafri,
+        name: 'SWAFRI',
+        git: '',
+        web: 'https://swafri.com/'
+    },
+    {
+        image: hive888,
+        name: 'HIVE888',
+        git: '',
+        web: 'https://hive888.org/'
+    },
+    {
         image: mrb,
         name: ' Mr Beast Crypto Remittance',
         git:'https://github.com/Million-art/mini_app_backend.git',
-        web: ' https://t.me/john_sart_bot/app/'
+        web: ' https://t.me/mrbeasapp_bot'
     },
 
-    {
-        image: ecommerce,
-        name: 'Dir Ecommerce',
-        git:'https://github.com/Million-art/dir_ecommerce',
-        web: 'https://dir-ecommerce.vercel.app/'
-    },
 
     {
         image: oromia,
@@ -67,49 +73,56 @@ const cards: Card[] = [
         web: 'https://t.me/official_oromia_bank_bot'
     },
 
-    {
-        image: lewis,
-        name: 'Lewis retails',
-        git:'https://github.com/Million-art/lewis-retails-supermarket',
-        web: 'https://lewis-retails-supermarket.vercel.app/'
-    },
 
 
-    {
-        image: global,
-        name: 'Global Bank Ethiopia Referral BOT',
-        git:'https://github.com/Million-art/oromiya_bank_referral_bot_v2',
-        web: 'https://t.me/globalbankethiopia_bot'
-    },
+
 
 
 ];
 
 const Web = () => {
     return (
-        <div className='mt-6'>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {cards.map((card, index) => (
-                <div key={index} className="bg-black rounded-lg overflow-hidden shadow-md">
-                    <figure className="flex justify-center">
-                        <Image src={card.image} alt={card.name} className="w-full h-48 object-cover" />
+                <article
+                    key={index}
+                    className="group surface-card overflow-hidden transition duration-300 hover:border-cyan-500/20 hover:shadow-lg hover:shadow-cyan-500/5"
+                >
+                    <figure className="relative aspect-[16/10] overflow-hidden border-b border-white/[0.06]">
+                        <Image
+                            src={card.image}
+                            alt={card.name}
+                            className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
                     </figure>
-                    <div className="p-4">
-                        <h2 className="text-xl font-semibold mb-2">{card.name}</h2>
-                        <div className="flex justify-between items-center">
+                    <div className="p-5">
+                        <h2 className="mb-4 text-lg font-semibold tracking-tight text-zinc-100">{card.name}</h2>
+                        <div className="flex flex-wrap gap-2">
                             {card.git && (
-                                <Link href={card.git} target='_blank' className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
+                                <Link
+                                    href={card.git}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="rounded-lg border border-white/10 bg-white/[0.05] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-200 transition hover:border-violet-500/40 hover:bg-violet-500/10"
+                                >
                                     GitHub
                                 </Link>
                             )}
                             {card.web && (
-                                <Link href={card.web} target='_blank' className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-300">
-                                    Web Link
+                                <Link
+                                    href={card.web.trim()}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-cyan-200 transition hover:bg-cyan-500/20"
+                                >
+                                    Live
                                 </Link>
                             )}
                         </div>
                     </div>
-                </div>
+                </article>
             ))}
         </div>
 

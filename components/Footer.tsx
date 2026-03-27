@@ -2,13 +2,10 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className=" w-full text-white py-4">
-        <hr />
-      <div className="max-w-7xl flex justify-center mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
-          <p>© 2024. All rights reserved.</p>
-         
-        </div>
+    <footer className="mt-20 w-full border-t border-white/[0.06] py-8 text-zinc-500">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-2 px-4 text-center text-sm sm:flex-row sm:justify-between sm:text-left">
+        <p>© {new Date().getFullYear()} Million. All rights reserved.</p>
+        <p className="font-mono text-xs text-zinc-600">Built with Next.js</p>
       </div>
     </footer>
   );

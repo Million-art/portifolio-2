@@ -10,7 +10,7 @@ export function Services() {
       title: "Web Development",
       value: "Service",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+        <div className="relative h-full w-full overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-br from-zinc-900/90 via-zinc-950 to-violet-950/50 p-6 text-white md:p-10">
            <Web />
         </div>
       ),
@@ -19,7 +19,7 @@ export function Services() {
       title: "Bot Development",
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+        <div className="relative h-full w-full overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-br from-zinc-900/90 via-zinc-950 to-cyan-950/40 p-6 text-white md:p-10">
            <Bot />
         </div>
       ),

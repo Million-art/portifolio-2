@@ -1,14 +1,25 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
+import { Outfit, JetBrains_Mono } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-// const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Million's Portfolio",
-  description: "Ethical Developer",
+  description:
+    "Senior backend engineer building AI-powered products, scalable APIs, and intelligent bots.",
 };
 
 export default function RootLayout({
@@ -21,7 +32,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body  >
+      <body
+        className={`${outfit.variable} ${jetbrainsMono.variable} font-sans antialiased`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
