@@ -11,16 +11,12 @@ import kubernet from '../assets/kubernet.png';
 import nestjs from '../assets/nest.png';
 import reactImage from '../assets/react.png';
 import nextjsImage from '../assets/nextjs.png';
-import nodejsImage from '../assets/node.png';
 import mongodb from '../assets/mongodb.png';
-import mysql from '../assets/mysql.png';
-import graphql from '../assets/graphql.png';
-import rustapi from '../assets/rustapi.png';
 import golang from '../assets/golang.png';
-import githubImage from '../assets/git.png';
+import awsImage from '../assets/aws.png';
 import dockerImage from '../assets/docker.png';
 import kafka from '../assets/kafka.png';
-import rabitmq from '../assets/rabit.png';
+import grpc from '../assets/grpc.jpeg';
 
 const aiStack = [
   'LLM APIs & streaming',
@@ -56,20 +52,15 @@ const Skills = () => {
   };
 
   const skills = [
+    { image: golang, title: 'Golang' },
+    { image: nestjs, title: 'Nest.js' },
+    { image: kafka, title: 'Apache Kafka' },
+    { image: dockerImage, title: 'Docker' },
+    { image: mongodb, title: 'MongoDB' },
+    { image: postgres, title: 'PostgreSQL' },
     { image: reactImage, title: 'React' },
     { image: nextjsImage, title: 'Next.js' },
-    { image: nestjs, title: 'Nest.js' },
-    { image: nodejsImage, title: 'Node.js' },
-    { image: golang, title: 'Golang' },
-    { image: mongodb, title: 'MongoDB' },
-    { image: mysql, title: 'MySQL' },
-    { image: postgres, title: 'PostgreSQL' },
-    { image: githubImage, title: 'GitHub' },
-    { image: graphql, title: 'GraphQL' },
-    { image: rustapi, title: 'Rust API' },
-    { image: kafka, title: 'Apache Kafka' },
-    { image: rabitmq, title: 'RabbitMQ' },
-    { image: dockerImage, title: 'Docker' },
+    { image: awsImage, title: 'AWS' }aws  { image: grpc, title: 'gRPC' },
     { image: kubernet, title: 'Kubernetes' },
   ];
 

@@ -114,10 +114,10 @@ const About = () => {
                   — Intern (3 months)
                 </li>
                 <li>
-                  <Link className="text-cyan-400/90 hover:underline" href="https://techsphareet.com/">
-                    Techsphere
+                  <Link className="text-cyan-400/90 hover:underline" href="https://www.blihmarketing.com">
+                    Blih Marketing
                   </Link>{" "}
-                  — Web Developer (8 months)
+                  — Programmer (1+ years)
                 </li>
               </ul>
             </div>
@@ -146,10 +146,10 @@ const About = () => {
               </h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link className="text-cyan-400/90 hover:underline" href="https://www.blihmarketing.com">
-                    Blih Marketing
+                  <Link className="text-cyan-400/90 hover:underline" href="https://techsphareet.com/">
+                    Techsphere
                   </Link>{" "}
-                  — Programmer (1+ years)
+                  — Web Developer (8 months)
                 </li>
                 <li>
                   <Link className="text-cyan-400/90 hover:underline" href="https://ptgr.ch">
