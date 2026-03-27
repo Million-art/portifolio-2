@@ -115,7 +115,7 @@ const About = () => {
                 </li>
                 <li>
                   <Link className="text-cyan-400/90 hover:underline" href="https://www.blihmarketing.com">
-                    Blih Marketing
+                    Blih Intelligent Ops 
                   </Link>{" "}
                   — Programmer (1+ years)
                 </li>
@@ -133,7 +133,7 @@ const About = () => {
                   — Backend Developer (6 months)
                 </li>
                 <li>
-                  <Link className="text-cyan-400/90 hover:underline" href="https://www.blihmarketing.com">
+                  <Link className="text-cyan-400/90 hover:underline" href="https://blihops.com">
                     30x LLC
                   </Link>{" "}
                   (Remote) — Web Developer (1 year)
