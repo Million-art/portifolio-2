@@ -34,9 +34,6 @@ const Hero = () => {
             <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-cyan-300/90">
               Performance · Scale · Reliability
             </span>
-            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium text-zinc-400">
-              Senior Backend Engineer @ PTGR AG
-            </span>
           </div>
 
           <TextGenerateEffect
@@ -60,12 +57,7 @@ const Hero = () => {
                 View selected work
               </span>
             </Link>
-            <Link
-              href="#about"
-              className="text-sm font-medium text-zinc-400 underline-offset-4 hover:text-zinc-200 hover:underline"
-            >
-              About &amp; experience
-            </Link>
+
             <MagicButton />
           </div>
         </div>
