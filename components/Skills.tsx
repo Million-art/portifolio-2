@@ -5,7 +5,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
-
 import postgres from '../assets/postgress.png';
 import kubernet from '../assets/kubernet.png';
 import nestjs from '../assets/nest.png';
@@ -60,8 +59,9 @@ const Skills = () => {
     { image: postgres, title: 'PostgreSQL' },
     { image: reactImage, title: 'React' },
     { image: nextjsImage, title: 'Next.js' },
-    { image: awsImage, title: 'AWS' }aws  { image: grpc, title: 'gRPC' },
-    { image: kubernet, title: 'Kubernetes' },
+    { image: awsImage, title: 'AWS' }, 
+    { image: grpc, title: 'gRPC' },
+    { image: kubernet, title: 'Kubernetes'   },
   ];
 
   return (
