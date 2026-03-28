@@ -45,7 +45,7 @@ const cards: Card[] = [
         image: investpro,
         name: 'Invest  Pro',
         git:'',
-        web: 'https://investproo_bot/'
+        web: 'https://t.me/investproo_bot/'
     },
     {
         image: habeshanets,
