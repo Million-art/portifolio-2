@@ -28,15 +28,7 @@ const Portfolio = () => {
                     >
                         Recent Works
                     </button>
-                    {/* <button
-                        className={`tab ${activeTab === 2 ? 'active' : '!bg-blue-400 !text-white'} text-xl sm:text-2xl`}
-                        onClick={() => handleTabChange(2)}
-                        aria-selected={activeTab === 2}
-                        aria-controls="tab-content-2"
-                        role="tab"
-                    >
-                        Bot Development
-                    </button> */}
+
                 </div>
 
                 <div className="tab-content" id="tab-content-1" role="tabpanel" aria-labelledby="tab-1" hidden={activeTab !== 1}>

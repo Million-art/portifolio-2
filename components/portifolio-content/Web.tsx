@@ -22,24 +22,7 @@ interface Card {
 // Array of card data
 const cards: Card[] = [
 
-    {
-        image: investpro,
-        name: 'Invest  Pro',
-        git:'',
-        web: 'https://investproo_bot/'
-    },
-    {
-        image: habeshanets,
-        name: 'Habesha Nets',
-        git:'',
-        web: 'https://www.habeshanets.com/en'
-    },
-    {
-        image: blockbar,
-        name: 'BlockBar',
-        git:'',
-        web: 'https://blockbar.com'
-    },
+ 
     {
         image: carramarket,
         name: 'Carramarket',
@@ -57,6 +40,24 @@ const cards: Card[] = [
         name: 'HIVE888',
         git: '',
         web: 'https://hive888.org/'
+    },
+    {
+        image: investpro,
+        name: 'Invest  Pro',
+        git:'',
+        web: 'https://investproo_bot/'
+    },
+    {
+        image: habeshanets,
+        name: 'Habesha Nets',
+        git:'',
+        web: 'https://www.habeshanets.com/en'
+    },
+    {
+        image: blockbar,
+        name: 'BlockBar',
+        git:'',
+        web: 'https://blockbar.com'
     },
     {
         image: mrb,
