@@ -1,11 +1,16 @@
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Link from "next/link";
+
+const highlightPills = [
+  "Lean APIs & caching",
+  "Queues & horizontal scale",
+  "Observable & cost-aware",
+];
 
 const Hero = () => {
   return (
-    <div className="pb-16 pt-24 md:pb-24 md:pt-32">
+    <div className="pb-16 pt-24 md:pb-24 md:pt-28">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -28,37 +33,67 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative z-10">
-        <div className="max-w-[92vw] md:max-w-3xl lg:max-w-4xl flex flex-col items-center justify-center text-center">
-          <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
-            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-cyan-300/90">
-              Performance · Scale · Reliability
-            </span>
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-x-12 xl:gap-x-16">
+          {/* Left column: hook + CTAs */}
+          <div className="flex flex-col items-center text-center lg:col-span-5 lg:items-start lg:text-left">
+            <div className="mb-5 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+              <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-cyan-300/90">
+                Performance · Scale · Reliability
+              </span>
+            </div>
+
+            {/* Mobile: short, punchy headline */}
+            <h1 className="md:hidden text-balance text-[1.75rem] font-semibold leading-[1.12] tracking-tight text-zinc-100 sm:text-3xl">
+              <span className="text-gradient">Millions of requests.</span>
+              <br />
+              Same steady backend.
+            </h1>
+
+            {/* Desktop: stronger two-line hook that uses horizontal space */}
+            <h1 className="hidden max-w-xl text-balance md:block text-4xl font-semibold leading-[1.08] tracking-tight text-zinc-100 lg:max-w-none lg:text-5xl xl:text-[3.35rem]">
+              Real systems.
+              <br />
+              <span className="text-gradient">Backends tuned for 1M+ traffic.</span>
+            </h1>
+
+            <p className="mt-4 hidden md:block max-w-md text-sm leading-relaxed text-zinc-500 lg:max-w-lg lg:text-base">
+              I build Production APIs that stay fast when load spikes caching, pools, workers, and observability
+              baked in.
+            </p>
+
+            <div className="mt-8 flex w-full flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
+              <Link href="#portifolio" className="w-full sm:w-auto">
+                <span className="inline-flex h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-8 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition hover:opacity-95 hover:shadow-violet-500/35 sm:w-auto">
+                  View selected work
+                </span>
+              </Link>
+              <MagicButton className="justify-center" />
+            </div>
           </div>
 
-          <TextGenerateEffect
-            words="Shipping real performant systems with backends built to handle a million requests the right way"
-            className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-semibold leading-[1.15] tracking-tight"
-          />
+          {/* Right column: detail + visual density on large screens */}
+          <div className="lg:col-span-7">
+            <p className="text-pretty text-center text-base leading-relaxed text-zinc-400 md:text-left md:text-lg lg:max-w-none">
+              I&apos;m <span className="text-zinc-200 font-medium">Million</span> : I focus on{" "}
+              <span className="text-gradient font-medium">production Systems</span> that stay fast under
+              load: lean APIs, smart caching, queues and workers, connection pooling, database tuning, and
+              horizontal scaling so spikes and sustained traffic on the order of{" "}
+              <span className="font-medium text-zinc-300">1M+ requests</span> stay predictable, observable,
+              and cost-aware. Still shipping bots and AI features where they belong: on top of solid
+              infrastructure.
+            </p>
 
-          <p className="mt-6 max-w-2xl text-pretty text-base md:text-lg text-zinc-400 leading-relaxed">
-            I&apos;m <span className="text-zinc-200 font-medium">Million</span> — I focus on{" "}
-            <span className="text-gradient font-medium">production backends</span> that stay fast under
-            load: lean APIs, smart caching, queues and workers, connection pooling, database tuning, and
-            horizontal scaling so spikes and sustained traffic—on the order of{" "}
-            <span className="text-zinc-300">1M+ requests</span>—stay predictable, observable, and
-            cost-aware. Still shipping bots and AI features where they belong: on top of solid
-            infrastructure.
-          </p>
-
-          <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
-            <Link href="#portifolio">
-              <span className="inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-8 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition hover:opacity-95 hover:shadow-violet-500/35">
-                View selected work
-              </span>
-            </Link>
-
-            <MagicButton />
+            <ul className="mt-8 grid gap-3 sm:grid-cols-3" aria-label="Engineering focus">
+              {highlightPills.map((label) => (
+                <li
+                  key={label}
+                  className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-center text-xs font-medium leading-snug text-zinc-300 sm:text-left md:text-sm"
+                >
+                  {label}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

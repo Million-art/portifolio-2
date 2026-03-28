@@ -7,7 +7,7 @@ const About = () => {
       <h2 className="heading mb-3 text-zinc-100">About</h2>
       <p className="mx-auto mb-12 max-w-3xl text-center text-base md:text-lg text-zinc-400 leading-relaxed">
         I build production systems where{" "}
-        <span className="text-zinc-200">APIs, data, and AI</span> meet real users — from secure backends
+        <span className="text-zinc-200">APIs, data, and AI</span> meet real users from secure backends
         and integrations to bots and LLM-assisted flows. I value clear contracts, testing, and shipping
         responsibly.
       </p>
