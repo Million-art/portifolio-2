@@ -11,7 +11,7 @@ import blockbar from '@/assets/BlockBar.png';
 import carramarket from '@/assets/carramarket.png';
 import sewafri from '@/assets/sewafri.png';
 import hive888 from '@/assets/hive888.png';
-import kafdm from '@/assets/kafdm.png';
+import kafdm from '@/assets/kafdm.jpg';
 // Interface definition for card data
 interface Card {
     image: StaticImageData;
@@ -32,7 +32,7 @@ const cards: Card[] = [
     },
     {
         image: kafdm,
-        name: 'Kafdm',
+        name: 'Property Management SaaS',
         git: '',
         web: ''
     },
@@ -95,7 +95,7 @@ const Web = () => {
             {cards.map((card, index) => (
                 <article
                     key={index}
-                    className="group surface-card overflow-hidden transition duration-300 hover:border-cyan-500/20 hover:shadow-lg hover:shadow-cyan-500/5"
+                    className="group surface-card overflow-hidden transition duration-300 hover:border-upwork/25 hover:shadow-lg hover:shadow-upwork/10"
                 >
                     <figure className="relative aspect-[16/10] overflow-hidden border-b border-white/[0.06]">
                         <Image
