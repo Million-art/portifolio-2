@@ -11,6 +11,7 @@ import blockbar from '@/assets/BlockBar.png';
 import carramarket from '@/assets/carramarket.png';
 import sewafri from '@/assets/sewafri.png';
 import hive888 from '@/assets/hive888.png';
+import kafdm from '@/assets/kafdm.png';
 // Interface definition for card data
 interface Card {
     image: StaticImageData;
@@ -34,6 +35,12 @@ const cards: Card[] = [
         name: 'SWAFRI',
         git: '',
         web: 'https://swafri.com/'
+    },
+    {
+        image: kafdm,
+        name: 'Property Management SaaS',
+        git: '',
+        web: ''
     },
     {
         image: hive888,
@@ -62,7 +69,7 @@ const cards: Card[] = [
     {
         image: mrb,
         name: ' Mr Beast Crypto Remittance',
-        git:'https://github.com/Million-art/mini_app_backend.git',
+        git:'',
         web: ' https://t.me/mrbeasapp_bot'
     },
 
@@ -70,7 +77,7 @@ const cards: Card[] = [
     {
         image: oromia,
         name: 'Oromia Bank Referral BOT',
-        git:'https://github.com/Million-art/oromiya_bank_referral_bot_v2',
+        git:'',
         web: 'https://t.me/official_oromia_bank_bot'
     },
 
