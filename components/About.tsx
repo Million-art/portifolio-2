@@ -12,15 +12,15 @@ const About = () => {
     <div id="about" className="container mt-28 sm:mt-36 sm:mx-auto px-4">
       <h2 className="heading mb-3 text-zinc-100">About</h2>
       <p className="mx-auto mb-6 max-w-3xl text-center text-base md:text-lg text-zinc-400 leading-relaxed">
-        I&apos;m <span className="text-zinc-200 font-medium">Million</span> — I build production systems
+        I&apos;m <span className="text-zinc-200 font-medium">Million</span>  I build production systems
         where <span className="text-zinc-200">APIs, data, and AI</span> meet real users: secure backends,
         integrations, bots, and LLM-assisted flows. I value clear contracts, testing, and shipping
         responsibly.
       </p>
       <p className="mx-auto mb-12 max-w-3xl text-center text-base md:text-lg text-zinc-400 leading-relaxed">
         On <span className="text-zinc-200">Upwork</span> I work as{" "}
-        <span className="font-medium text-upwork">Top Rated</span> talent — the program represents
-        roughly the <span className="text-zinc-200 font-medium">top 3%</span> on the platform — and I
+        <span className="font-medium text-upwork">Top Rated</span> talent  the program represents
+        roughly the <span className="text-zinc-200 font-medium">top 3%</span> on the platform  and I
         maintain a <span className="text-zinc-200 font-medium">100% Job Success Score (JSS)</span>,{" "}
         meaning clients consistently get delivery they&apos;re happy to close successfully.
       </p>
@@ -35,7 +35,7 @@ const About = () => {
           </h3>
           <p className="mb-6 text-sm leading-relaxed text-zinc-400 md:text-base">
             My public profile shows verified <strong className="text-zinc-300">Top Rated</strong> status
-            and <strong className="text-zinc-300">100% Job Success</strong> — the same signals clients use
+            and <strong className="text-zinc-300">100% Job Success</strong>  the same signals clients use
             to hire with confidence for backend, full-stack, and bot work.
           </p>
           <div className="mb-6 flex flex-wrap gap-3">
@@ -129,21 +129,21 @@ const About = () => {
             <li className="flex gap-2">
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork" />
               <span>
-                <strong className="text-zinc-200">LLM integration</strong> — REST/streaming APIs, tool use,
+                <strong className="text-zinc-200">LLM integration</strong>  REST/streaming APIs, tool use,
                 structured outputs, and guardrails for production bots.
               </span>
             </li>
             <li className="flex gap-2">
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork" />
               <span>
-                <strong className="text-zinc-200">Conversational products</strong> — Telegram and web
+                <strong className="text-zinc-200">Conversational products</strong>  Telegram and web
                 assistants with retrieval-style patterns and clear UX.
               </span>
             </li>
             <li className="flex gap-2">
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork" />
               <span>
-                <strong className="text-zinc-200">Backend for AI</strong> — Nest/Node and Go services,
+                <strong className="text-zinc-200">Backend for AI</strong>  Nest/Node and Go services,
                 queues, observability, and secure handling of keys and user data.
               </span>
             </li>
@@ -170,13 +170,13 @@ const About = () => {
                   <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://www.fanabc.com/">
                     Fana BC
                   </Link>{" "}
-                  — Intern (3 months)
+                   Intern (3 months)
                 </li>
                 <li>
                   <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://blihops.com/">
                     Blih Intelligent Ops
                   </Link>{" "}
-                  — Programmer (1+ years)
+                   Programmer (1+ years)
                 </li>
               </ul>
             </div>
@@ -189,13 +189,13 @@ const About = () => {
                   <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://www.godigitalethio.com">
                     Go Digital
                   </Link>{" "}
-                  — Backend Developer (6 months)
+                   Backend Developer (6 months)
                 </li>
                 <li>
                   <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://blihops.com">
                     30x LLC
                   </Link>{" "}
-                  (Remote) — Web Developer (1 year)
+                  (Remote)  Web Developer (1 year)
                 </li>
               </ul>
             </div>
@@ -208,26 +208,26 @@ const About = () => {
                   <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://techsphareet.com/">
                     Techsphere
                   </Link>{" "}
-                  — Web Developer (8 months)
+                   Web Developer (8 months)
                 </li>
                 <li>
                   <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://ptgr.ch">
                     PTGR AG
                   </Link>{" "}
-                  — Senior Backend Engineer
+                   Senior Backend Engineer
                 </li>
               </ul>
             </div>
             <div className="border-l border-upwork/45 pl-4">
               <h4 className="mb-2 font-mono text-xs font-semibold uppercase tracking-wider text-upwork-bright">
-                2026 — Present
+                2026  Present
               </h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://ptgr.ch">
                     PTGR AG
                   </Link>{" "}
-                  — Senior Backend Engineer
+                   Senior Backend Engineer
                 </li>
               </ul>
             </div>

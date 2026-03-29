@@ -10,14 +10,14 @@ const Bot = () => {
         <li className="flex gap-3">
           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork shadow-[0_0_12px_rgba(111,218,68,0.35)]" />
           <span>
-            <strong className="font-semibold text-upwork-bright">Telegram bots</strong> — Automation,
+            <strong className="font-semibold text-upwork-bright">Telegram bots</strong>  Automation,
             payments flows, referrals, and integrations with your existing APIs and databases.
           </span>
         </li>
         <li className="flex gap-3">
           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork shadow-[0_0_12px_rgba(111,218,68,0.35)]" />
           <span>
-            <strong className="font-semibold text-upwork-bright">Telegram Mini Apps</strong> — Web apps
+            <strong className="font-semibold text-upwork-bright">Telegram Mini Apps</strong>  Web apps
             inside Telegram for onboarding, dashboards, and lightweight product UX without a separate
             install.
           </span>
@@ -25,7 +25,7 @@ const Bot = () => {
         <li className="flex gap-3">
           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork shadow-[0_0_12px_rgba(111,218,68,0.35)]" />
           <span>
-            <strong className="font-semibold text-upwork-bright">AI in chat</strong> — Natural-language
+            <strong className="font-semibold text-upwork-bright">AI in chat</strong>  Natural-language
             commands, guided flows, and assistant-style experiences wired to your backend with clear
             guardrails.
           </span>

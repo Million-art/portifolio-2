@@ -11,14 +11,14 @@ const Web = () => {
         <li className="flex gap-3">
           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork shadow-[0_0_12px_rgba(111,218,68,0.35)]" />
           <span>
-            <strong className="font-semibold text-upwork-bright">Full-stack delivery</strong> — React,
+            <strong className="font-semibold text-upwork-bright">Full-stack delivery</strong>  React,
             Next.js, Node/Nest, PostgreSQL, MongoDB, and GraphQL for fast, secure, observable products.
           </span>
         </li>
         <li className="flex gap-3">
           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork shadow-[0_0_12px_rgba(111,218,68,0.35)]" />
           <span>
-            <strong className="font-semibold text-upwork-bright">AI-ready backends</strong> — APIs and
+            <strong className="font-semibold text-upwork-bright">AI-ready backends</strong>  APIs and
             workers for LLM features: streaming, tool routing, rate limits, and safe handling of prompts and
             context.
           </span>
@@ -26,7 +26,7 @@ const Web = () => {
         <li className="flex gap-3">
           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-upwork shadow-[0_0_12px_rgba(111,218,68,0.35)]" />
           <span>
-            <strong className="font-semibold text-upwork-bright">Distributed systems</strong> — Kafka,
+            <strong className="font-semibold text-upwork-bright">Distributed systems</strong>  Kafka,
             RabbitMQ, Docker, and Kubernetes where scale and reliability matter.
           </span>
         </li>

@@ -11,6 +11,7 @@ import blockbar from '@/assets/BlockBar.png';
 import carramarket from '@/assets/carramarket.png';
 import sewafri from '@/assets/sewafri.png';
 import hive888 from '@/assets/hive888.png';
+import kafdm from '@/assets/kafdm.png';
 // Interface definition for card data
 interface Card {
     image: StaticImageData;
@@ -28,6 +29,12 @@ const cards: Card[] = [
         name: 'Carramarket',
         git: '',
         web: 'https://carramarket.com/'
+    },
+    {
+        image: kafdm,
+        name: 'Kafdm',
+        git: '',
+        web: ''
     },
     {
         image: sewafri,
