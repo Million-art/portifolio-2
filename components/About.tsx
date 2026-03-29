@@ -173,7 +173,7 @@ const About = () => {
                   — Intern (3 months)
                 </li>
                 <li>
-                  <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://www.blihmarketing.com">
+                  <Link className="text-upwork hover:text-upwork-bright hover:underline" href="https://blihops.com/">
                     Blih Intelligent Ops
                   </Link>{" "}
                   — Programmer (1+ years)
