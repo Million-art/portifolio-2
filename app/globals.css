@@ -88,6 +88,10 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-violet-300 to-fuchsia-300;
   }
+  /** Brand green gradient (use `text-upwork` from Tailwind for solid) */
+  .text-upwork-gradient {
+    @apply bg-gradient-to-r from-upwork-deep to-upwork bg-clip-text text-transparent;
+  }
   .surface-card {
     @apply rounded-2xl border border-white/[0.08] bg-gradient-to-br from-white/[0.06] to-transparent backdrop-blur-sm shadow-[0_0_0_1px_rgba(255,255,255,0.04)_inset];
   }
@@ -119,6 +123,6 @@
 .tab.active {
   font-weight: 600;
   color: rgb(244 244 245);
-  background: rgba(34, 211, 238, 0.12);
-  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25);
+  background: rgba(111, 218, 68, 0.14);
+  box-shadow: 0 0 0 1px rgba(111, 218, 68, 0.35);
 }

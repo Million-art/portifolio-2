@@ -27,7 +27,8 @@ export default function Home() {
           Services
         </h2>
         <p className="text-center text-zinc-400 text-sm md:text-base max-w-xl mx-auto mb-10">
-          Full-stack delivery with a focus on reliable backends and AI-ready architectures.
+          Full-stack delivery with a focus on{" "}
+          <span className="font-medium text-upwork">reliable backends</span> and AI-ready architectures.
         </p>
         <Services />
         <Portifolio />

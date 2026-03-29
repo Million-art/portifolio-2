@@ -72,14 +72,14 @@ const Skills = () => {
       </p>
 
       <div className="surface-card mb-12 w-full max-w-4xl p-6 md:p-8">
-        <h3 className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-fuchsia-400/90">
+        <h3 className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-upwork">
           AI &amp; intelligent systems
         </h3>
         <div className="flex flex-wrap justify-center gap-2">
           {aiStack.map((label) => (
             <span
               key={label}
-              className="rounded-full border border-fuchsia-500/20 bg-fuchsia-500/[0.08] px-3 py-1.5 text-xs font-medium text-fuchsia-100/90"
+              className="rounded-full border border-upwork/25 bg-upwork/[0.08] px-3 py-1.5 text-xs font-medium text-upwork-bright"
             >
               {label}
             </span>
@@ -87,8 +87,8 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="surface-card w-full max-w-5xl px-4 py-8 md:px-8 md:py-10 [&_.slick-dots_li_button:before]:text-zinc-500 [&_.slick-dots_li.slick-active_button:before]:text-cyan-400">
-        <h3 className="mb-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+      <div className="surface-card w-full max-w-5xl px-4 py-8 md:px-8 md:py-10 [&_.slick-dots_li_button:before]:text-zinc-500 [&_.slick-dots_li.slick-active_button:before]:text-upwork">
+        <h3 className="mb-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-upwork/80">
           Platforms &amp; infrastructure
         </h3>
         <Slider {...settings}>

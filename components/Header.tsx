@@ -22,7 +22,7 @@ const Header = () => {
           href="/"
           className="text-lg font-semibold tracking-tight text-white md:text-xl"
         >
-          Million<span className="text-gradient">.</span>
+          Million<span className="text-upwork">.</span>
         </Link>
 
         <button

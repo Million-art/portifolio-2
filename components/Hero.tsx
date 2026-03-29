@@ -38,14 +38,14 @@ const Hero = () => {
           {/* Left column: hook + CTAs */}
           <div className="flex flex-col items-center text-center lg:col-span-5 lg:items-start lg:text-left">
             <div className="mb-5 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
-              <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-cyan-300/90">
+              <span className="rounded-full border border-upwork/25 bg-upwork/[0.08] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-upwork">
                 Performance · Scale · Reliability
               </span>
             </div>
 
             {/* Mobile: short, punchy headline */}
             <h1 className="md:hidden text-balance text-[1.75rem] font-semibold leading-[1.12] tracking-tight text-zinc-100 sm:text-3xl">
-              <span className="text-gradient">Millions of requests.</span>
+              <span className="text-upwork-gradient font-semibold">Millions of requests.</span>
               <br />
               Same steady backend.
             </h1>
@@ -54,7 +54,9 @@ const Hero = () => {
             <h1 className="hidden max-w-xl text-balance md:block text-4xl font-semibold leading-[1.08] tracking-tight text-zinc-100 lg:max-w-none lg:text-5xl xl:text-[3.35rem]">
               Real systems.
               <br />
-              <span className="text-gradient">Backends tuned for 1M+ traffic.</span>
+              <span className="text-upwork-gradient font-bold">
+                Backends tuned for 1M+ traffic.
+              </span>
             </h1>
 
             <p className="mt-4 hidden md:block max-w-md text-sm leading-relaxed text-zinc-500 lg:max-w-lg lg:text-base">
@@ -64,7 +66,7 @@ const Hero = () => {
 
             <div className="mt-8 flex w-full flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
               <Link href="#portifolio" className="w-full sm:w-auto">
-                <span className="inline-flex h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-8 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition hover:opacity-95 hover:shadow-violet-500/35 sm:w-auto">
+                <span className="inline-flex h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-upwork-deep to-upwork px-8 text-sm font-semibold text-zinc-950 shadow-lg shadow-upwork/25 transition hover:opacity-95 hover:shadow-upwork/35 sm:w-auto">
                   View selected work
                 </span>
               </Link>
@@ -76,7 +78,7 @@ const Hero = () => {
           <div className="lg:col-span-7">
             <p className="text-pretty text-center text-base leading-relaxed text-zinc-400 md:text-left md:text-lg lg:max-w-none">
               I&apos;m <span className="text-zinc-200 font-medium">Million</span> : I focus on{" "}
-              <span className="text-gradient font-medium">production Systems</span> that stay fast under
+              <span className="font-medium text-upwork">production systems</span> that stay fast under
               load: lean APIs, smart caching, queues and workers, connection pooling, database tuning, and
               horizontal scaling so spikes and sustained traffic on the order of{" "}
               <span className="font-medium text-zinc-300">1M+ requests</span> stay predictable, observable,

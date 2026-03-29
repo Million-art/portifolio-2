@@ -11,7 +11,6 @@ import blockbar from '@/assets/BlockBar.png';
 import carramarket from '@/assets/carramarket.png';
 import sewafri from '@/assets/sewafri.png';
 import hive888 from '@/assets/hive888.png';
-import kafdm from '@/assets/kafdm.png';
 // Interface definition for card data
 interface Card {
     image: StaticImageData;
@@ -35,12 +34,6 @@ const cards: Card[] = [
         name: 'SWAFRI',
         git: '',
         web: 'https://swafri.com/'
-    },
-    {
-        image: kafdm,
-        name: 'Property Management SaaS',
-        git: '',
-        web: ''
     },
     {
         image: hive888,
@@ -123,7 +116,7 @@ const Web = () => {
                                     href={card.web.trim()}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-cyan-200 transition hover:bg-cyan-500/20"
+                                    className="rounded-lg border border-upwork/35 bg-upwork/10 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-upwork-bright transition hover:bg-upwork/20"
                                 >
                                     Live
                                 </Link>

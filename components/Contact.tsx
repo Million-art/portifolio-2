@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 interface PhoneNumberProps {
@@ -21,7 +20,7 @@ const PhoneNumber: React.FC<PhoneNumberProps> = ({ phoneNumber }) => {
 
   return (
     <div
-      className="flex h-full min-h-[5.5rem] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-5 text-zinc-200 transition hover:border-cyan-500/30 hover:bg-white/[0.05]"
+      className="flex h-full min-h-[5.5rem] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-5 text-zinc-200 transition hover:border-[#34C759]/35 hover:bg-white/[0.05]"
       onClick={handleClick}
       role="button"
       tabIndex={0}
@@ -29,7 +28,13 @@ const PhoneNumber: React.FC<PhoneNumberProps> = ({ phoneNumber }) => {
         if (e.key === 'Enter') handleClick(e as unknown as React.MouseEvent<HTMLDivElement>);
       }}
     >
-      <FontAwesomeIcon icon={['fas', 'phone']} className="h-7 w-7 text-cyan-400/90" />
+      <svg className="h-7 w-7 shrink-0" viewBox="0 0 24 24" aria-hidden>
+        <rect width="24" height="24" rx="2" fill="#34C759" />
+        <path
+          fill="white"
+          d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+        />
+      </svg>
       <span className="text-xs font-medium uppercase tracking-wider text-zinc-500">Phone</span>
       <span className="select-all font-mono text-sm text-zinc-200">{phoneNumber}</span>
     </div>
@@ -55,7 +60,7 @@ const Contact = () => {
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
-      className="flex flex-col items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-5 text-zinc-300 transition hover:border-violet-500/30 hover:bg-white/[0.06] hover:text-white"
+      className="flex flex-col items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-5 text-zinc-300 transition hover:border-white/20 hover:bg-white/[0.06] hover:text-white"
     >
       {children}
       <span className="text-xs font-medium uppercase tracking-wider text-zinc-500">{label}</span>
@@ -75,22 +80,34 @@ const Contact = () => {
         {linkTile(
           contactDetails.telegram,
           'Telegram',
-          <svg className="h-7 w-7 text-cyan-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.866 7.287l-2.89 13.565c-.216.997-.816 1.242-1.65.773l-4.558-3.354-2.191 2.108c-.243.243-.446.446-.914.446-.599 0-.5-.225-.705-.798L6.5 13.09l-4.076-1.277c-.888-.272-.902-.888.199-1.32l15.966-6.175c.73-.272 1.433.18 1.152 1.269z" />
+          <svg className="h-7 w-7 shrink-0" viewBox="0 0 24 24" aria-hidden>
+            <circle cx="12" cy="12" r="12" fill="#229ED9" />
+            <path
+              fill="white"
+              d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.28-.89-.86.2-1.3l15.97-6.15c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.24 1.02-.84 1.27-1.7.79l-4.43-3.27-2.12 1.96c-.25.25-.46.46-.92.46z"
+            />
           </svg>
         )}
         {linkTile(
           contactDetails.linkedin,
           'LinkedIn',
-          <svg className="h-7 w-7 text-violet-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          <svg className="h-7 w-7 shrink-0" viewBox="0 0 24 24" aria-hidden>
+            <rect width="24" height="24" rx="2" fill="#0A66C2" />
+            <path
+              fill="white"
+              d="M6.94 15.99H4.32V8.41h2.62v7.58zm-1.31-8.66c-.84 0-1.52-.69-1.52-1.53 0-.84.68-1.52 1.52-1.52.83 0 1.51.68 1.51 1.52 0 .84-.68 1.53-1.51 1.53zm12.3 8.66h-2.61v-3.68c0-.88-.02-2.01-1.22-2.01-1.23 0-1.42.96-1.42 1.95v3.74h-2.61V8.41h2.51v1.03h.04c.35-.66 1.2-1.36 2.47-1.36 2.64 0 3.13 1.74 3.13 4v3.91z"
+            />
           </svg>
         )}
         {linkTile(
           contactDetails.gmail,
           'Email',
-          <svg className="h-7 w-7 text-fuchsia-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
-            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+          <svg className="h-7 w-7 shrink-0" viewBox="0 0 24 24" aria-hidden>
+            <rect width="24" height="24" rx="2" fill="#EA4335" />
+            <path
+              fill="white"
+              d="M19 5H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 2.2L12 13l-7-5.8V7l7 6 7-6v.2zm0 1.7V17H5V9.5l6.4 4c.35.22.78.22 1.13 0L19 9.5z"
+            />
           </svg>,
           false
         )}

@@ -12,9 +12,14 @@ const Portfolio = () => {
 
     return (
         <div id='portifolio' className="portfolio mt-32 flex flex-col items-center justify-center md:mt-40">
-            <h2 className="heading mb-3 text-zinc-100">Selected work</h2>
+            <h2 className="heading mb-3 text-balance">
+                <span className="text-zinc-100">Selected </span>
+                <span className="text-upwork">work</span>
+            </h2>
             <p className="mb-10 max-w-lg text-center text-sm text-zinc-400 md:text-base">
-                Product engineering across web platforms, fintech-adjacent flows, and intelligent bots.
+                Product engineering across{" "}
+                <span className="font-medium text-upwork/90">web platforms</span>, fintech-adjacent flows,
+                and intelligent bots.
             </p>
             <div className="tabs tabs-bordered w-full max-w-6xl">
                 <div role="tablist" className="tablist mb-8 flex flex-wrap justify-center gap-3">

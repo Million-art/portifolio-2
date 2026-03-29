@@ -46,6 +46,12 @@ const config = {
           "100": "#E4ECFF",
         },
         purple: "#CBACF9",
+        /** Freelance / credibility accent (Upwork-adjacent green) */
+        upwork: {
+          DEFAULT: "#6fda44",
+          bright: "#89f359",
+          deep: "#5fc73a",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
