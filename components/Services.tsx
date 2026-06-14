@@ -332,10 +332,10 @@ export function Services() {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-6 pt-4 border-t border-white/[0.06] flex justify-center">
             <Link
-              href="https://www.linkedin.com/company/digital-jobs-et"
+              href="https://t.me/Digitaljobs_et"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-upwork hover:text-upwork-bright hover:underline"
