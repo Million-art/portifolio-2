@@ -1,69 +1,44 @@
-'use client'
+"use client";
 
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Image from 'next/image';
-import postgres from '../assets/postgress.png';
-import kubernet from '../assets/kubernet.png';
-import nestjs from '../assets/nest.png';
-import reactImage from '../assets/react.png';
-import nextjsImage from '../assets/nextjs.png';
-import mongodb from '../assets/mongodb.png';
-import golang from '../assets/golang.png';
-import awsImage from '../assets/aws.png';
-import dockerImage from '../assets/docker.png';
-import kafka from '../assets/kafka.png';
-import grpc from '../assets/grpc.jpeg';
+import React from "react";
+import Image from "next/image";
+import postgres from "../assets/postgress.png";
+import kubernet from "../assets/kubernet.png";
+import nestjs from "../assets/nest.png";
+import reactImage from "../assets/react.png";
+import nextjsImage from "../assets/nextjs.png";
+import mongodb from "../assets/mongodb.png";
+import golang from "../assets/golang.png";
+import awsImage from "../assets/aws.png";
+import dockerImage from "../assets/docker.png";
+import kafka from "../assets/kafka.png";
+import grpc from "../assets/grpc.jpeg";
 
 const aiStack = [
-  'LLM APIs & streaming',
-  'Agent-style workflows',
-  'Prompt & eval loops',
-  'Vector / retrieval patterns',
-  'Embeddings & search',
-  'Bot platforms (Telegram)',
-  'Secure key handling',
+  "LLM APIs & streaming",
+  "Agent-style workflows",
+  "Prompt & eval loops",
+  "Vector / retrieval patterns",
+  "Embeddings & search",
+  "Bot platforms (Telegram)",
+  "Secure key handling",
+];
+
+const skills = [
+  { image: golang, title: "Golang" },
+  { image: nestjs, title: "Nest.js" },
+  { image: kafka, title: "Apache Kafka" },
+  { image: dockerImage, title: "Docker" },
+  { image: mongodb, title: "MongoDB" },
+  { image: postgres, title: "PostgreSQL" },
+  { image: reactImage, title: "React" },
+  { image: nextjsImage, title: "Next.js" },
+  { image: awsImage, title: "AWS" },
+  { image: grpc, title: "gRPC" },
+  { image: kubernet, title: "Kubernetes" },
 ];
 
 const Skills = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 3, slidesToScroll: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2, slidesToScroll: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
-      },
-    ],
-  };
-
-  const skills = [
-    { image: golang, title: 'Golang' },
-    { image: nestjs, title: 'Nest.js' },
-    { image: kafka, title: 'Apache Kafka' },
-    { image: dockerImage, title: 'Docker' },
-    { image: mongodb, title: 'MongoDB' },
-    { image: postgres, title: 'PostgreSQL' },
-    { image: reactImage, title: 'React' },
-    { image: nextjsImage, title: 'Next.js' },
-    { image: awsImage, title: 'AWS' }, 
-    { image: grpc, title: 'gRPC' },
-    { image: kubernet, title: 'Kubernetes'   },
-  ];
-
   return (
     <section id="skills" className="mt-20 flex flex-col items-center px-4 py-16 md:py-20">
       <h2 className="heading mb-3 text-zinc-100">Skills</h2>
@@ -71,6 +46,7 @@ const Skills = () => {
         Stack I use to ship backends, UIs, and AI-connected features.
       </p>
 
+      {/* AI & Intelligent Systems card */}
       <div className="surface-card mb-12 w-full max-w-4xl p-6 md:p-8">
         <h3 className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-upwork">
           AI &amp; intelligent systems
@@ -87,28 +63,33 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="surface-card w-full max-w-5xl px-4 py-8 md:px-8 md:py-10 [&_.slick-dots_li_button:before]:text-zinc-500 [&_.slick-dots_li.slick-active_button:before]:text-upwork">
+      {/* Platforms & Infrastructure Grid */}
+      <div className="surface-card w-full max-w-5xl px-6 py-8 md:px-10 md:py-10">
         <h3 className="mb-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-upwork/80">
           Platforms &amp; infrastructure
         </h3>
-        <Slider {...settings}>
+        
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center">
           {skills.map((skill, index) => (
-            <div key={skill.title + index}>
-              <div className="flex flex-col items-center justify-center px-3">
-                <div className="relative flex h-28 w-full max-w-[170px] items-center justify-center rounded-xl border border-white/5 bg-white/[0.02] sm:h-[130px]">
-                  <Image
-                    src={skill.image}
-                    alt={skill.title}
-                    className="object-contain p-3"
-                    fill
-                    sizes="170px"
-                  />
-                </div>
-                <p className="mt-3 text-center text-sm font-medium text-zinc-300">{skill.title}</p>
+            <div
+              key={skill.title + index}
+              className="flex flex-col items-center justify-center group"
+            >
+              <div className="relative flex h-24 w-full items-center justify-center rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-all duration-300 group-hover:border-upwork/20 group-hover:bg-white/[0.05] group-hover:scale-[1.03]">
+                <Image
+                  src={skill.image}
+                  alt={skill.title}
+                  className="object-contain p-2"
+                  fill
+                  sizes="(max-width: 640px) 120px, 150px"
+                />
               </div>
+              <p className="mt-2 text-center text-xs font-medium text-zinc-400 group-hover:text-zinc-200 transition-colors duration-300">
+                {skill.title}
+              </p>
             </div>
           ))}
-        </Slider>
+        </div>
       </div>
     </section>
   );

@@ -9,21 +9,21 @@ import Link from 'next/link';
 import investpro from '@/assets/investpro.jpg';
 import blockbar from '@/assets/BlockBar.png';
 import carramarket from '@/assets/carramarket.png';
-import sewafri from '@/assets/sewafri.png';
 import hive888 from '@/assets/hive888.png';
 import kafdm from '@/assets/kafdm.jpg';
-// Interface definition for card data
+import ptgrpay from '@/assets/ptgrpay.jpeg';
+
 interface Card {
     image: StaticImageData;
     name: string;
-    git:string;
+    git: string;
     web: string;
 }
 
 // Array of card data
 const cards: Card[] = [
 
- 
+
     {
         image: carramarket,
         name: 'Carramarket',
@@ -37,10 +37,10 @@ const cards: Card[] = [
         web: ''
     },
     {
-        image: sewafri,
-        name: 'SWAFRI',
+        image: ptgrpay,
+        name: 'PTGR Pay',
         git: '',
-        web: 'https://swafri.com/'
+        web: 'https://ptgrpay.com/'
     },
     {
         image: hive888,
@@ -51,25 +51,25 @@ const cards: Card[] = [
     {
         image: investpro,
         name: 'Invest  Pro',
-        git:'',
+        git: '',
         web: 'https://t.me/investproo_bot/'
     },
     {
         image: habeshanets,
         name: 'Habesha Nets',
-        git:'',
+        git: '',
         web: 'https://www.habeshanets.com/en'
     },
     {
         image: blockbar,
         name: 'BlockBar',
-        git:'',
+        git: '',
         web: 'https://blockbar.com'
     },
     {
         image: mrb,
         name: ' Mr Beast Crypto Remittance',
-        git:'',
+        git: '',
         web: ' https://t.me/mrbeasapp_bot'
     },
 
@@ -77,64 +77,59 @@ const cards: Card[] = [
     {
         image: oromia,
         name: 'Oromia Bank Referral BOT',
-        git:'',
+        git: '',
         web: 'https://t.me/official_oromia_bank_bot'
     },
-
-
-
-
-
 
 ];
 
 const Web = () => {
     return (
         <div className="mt-6">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {cards.map((card, index) => (
-                <article
-                    key={index}
-                    className="group surface-card overflow-hidden transition duration-300 hover:border-upwork/25 hover:shadow-lg hover:shadow-upwork/10"
-                >
-                    <figure className="relative aspect-[16/10] overflow-hidden border-b border-white/[0.06]">
-                        <Image
-                            src={card.image}
-                            alt={card.name}
-                            className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        />
-                    </figure>
-                    <div className="p-5">
-                        <h2 className="mb-4 text-lg font-semibold tracking-tight text-zinc-100">{card.name}</h2>
-                        <div className="flex flex-wrap gap-2">
-                            {card.git && (
-                                <Link
-                                    href={card.git}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="rounded-lg border border-white/10 bg-white/[0.05] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-200 transition hover:border-violet-500/40 hover:bg-violet-500/10"
-                                >
-                                    GitHub
-                                </Link>
-                            )}
-                            {card.web && (
-                                <Link
-                                    href={card.web.trim()}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="rounded-lg border border-upwork/35 bg-upwork/10 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-upwork-bright transition hover:bg-upwork/20"
-                                >
-                                    Live
-                                </Link>
-                            )}
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {cards.map((card, index) => (
+                    <article
+                        key={index}
+                        className="group surface-card overflow-hidden transition duration-300 hover:border-upwork/25 hover:shadow-lg hover:shadow-upwork/10"
+                    >
+                        <figure className="relative aspect-[16/10] overflow-hidden border-b border-white/[0.06]">
+                            <Image
+                                src={card.image}
+                                alt={card.name}
+                                className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            />
+                        </figure>
+                        <div className="p-5">
+                            <h2 className="mb-4 text-lg font-semibold tracking-tight text-zinc-100">{card.name}</h2>
+                            <div className="flex flex-wrap gap-2">
+                                {card.git && (
+                                    <Link
+                                        href={card.git}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="rounded-lg border border-white/10 bg-white/[0.05] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-200 transition hover:border-violet-500/40 hover:bg-violet-500/10"
+                                    >
+                                        GitHub
+                                    </Link>
+                                )}
+                                {card.web && (
+                                    <Link
+                                        href={card.web.trim()}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="rounded-lg border border-upwork/35 bg-upwork/10 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-upwork-bright transition hover:bg-upwork/20"
+                                    >
+                                        Live
+                                    </Link>
+                                )}
+                            </div>
                         </div>
-                    </div>
-                </article>
-            ))}
-        </div>
+                    </article>
+                ))}
+            </div>
 
-    </div>
+        </div>
     );
 };
 
